@@ -22,7 +22,7 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
-    - name: Redirect to application folder
-      run: cd BMSApplication
     - name: Build and Test
-      run: mvn test
+      run: mvn -f BMSApplication/pom.xml test
+    - name: Build and main class
+      run: mvn -f ./BMSApplication/pom.xml compile exec:java -Dexec.mainClass="BMS.BMSSender"
