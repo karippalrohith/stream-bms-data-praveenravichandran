@@ -22,6 +22,7 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
-    - name: Build and Test
+    - name: Redirect to application folder
       run: cd BMSApplication
+    - name: Build and Test
       run: mvn test
