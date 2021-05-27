@@ -1,6 +1,6 @@
 package BMS;
 
-import streamer.BMSStreamer;
+import streamer.BMSStreamerImpl;
 import streamer.IBMSStreamer;
 
 /**
@@ -8,8 +8,8 @@ import streamer.IBMSStreamer;
  *
  */
 public class BMSSender {
-	public static void sendData() {
-		IBMSStreamer bmsStreamer = new BMSStreamer();
+	public static void main(String[] args) {
+		IBMSStreamer bmsStreamer = new BMSStreamerImpl();
 		bmsStreamer.streamData();
 	}
 }
