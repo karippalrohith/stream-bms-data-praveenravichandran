@@ -25,4 +25,4 @@ jobs:
     - name: Redirect to application folder
       run: cd BMSApplication
     - name: Build and Test
-      run: mvn test
+      run: mvn -f BMSApplication/pom.xml test
