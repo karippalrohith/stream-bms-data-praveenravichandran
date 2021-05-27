@@ -16,4 +16,4 @@ jobs:
     - name: Build
       run: javac src/sender/BMSSender.java
     - name: Verify
-      run: java -ea -classpath . src.sender.BMSSender
+      run: java -ea -classpath . sender.BMSSender
